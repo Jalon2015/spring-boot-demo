@@ -1,0 +1,15 @@
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          # 配置admin-client地址，即客户端本地地址
+          service-base-url: "http://localhost:8080"
+        # 配置admin-server地址
+        url: "http://localhost:8090"
+management:
+  endpoints:
+    web:
+      exposure:
+        # 打开所有端点
+        include: "*"
