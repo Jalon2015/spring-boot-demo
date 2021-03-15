@@ -17,15 +17,22 @@ import java.util.concurrent.TimeoutException;
  */
 public class Work3 {
     private final static String QUEUE_NAME = "work_queue";
-
+    // 重新定义一个队列：因为RabbitMQ不允许以不同的参数 重复定义同一个队列
+    private final static String QUEUE_NAME_DURABLE = "work_queue_durable";
     public static void main(String[] args) {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost("localhost");
         try {
             Connection connection = connectionFactory.newConnection();
             Channel channel = connection.createChannel();
+            // 设置公平分配策略，即消费者确认了一个消息后，RabbitMQ才会给它分配下一个消息
+            int prefetchCount = 1;
+            channel.basicQos(prefetchCount);
 
-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+            // 队列持久化：如果RabbitMQ服务挂了，保证队列还存在
+            boolean durable = true;
+            channel.queueDeclare(QUEUE_NAME_DURABLE, durable, false, false, null);
+
             System.out.println("waiting for messages, to exit press CTRL+C");
             DeliverCallback callback = (s, delivery)->{
                 String s1 = new String(delivery.getBody(), "utf-8");
@@ -36,10 +43,15 @@ public class Work3 {
                     e.printStackTrace();
                 } finally {
                     System.out.println("done");
-                    channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
+                    // 注释掉手动确认的代码，假设忘记了手动确认
+//                    channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
+                    System.out.println("forget ack");
                 }
             };
-            channel.basicConsume(QUEUE_NAME, false, callback, consumeTag->{});
+            // 这里将之前的自动确认改为手动确认
+            boolean autoAck = false;
+            channel.basicConsume(QUEUE_NAME_DURABLE, autoAck, callback, consumeTag->{});
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (TimeoutException e) {

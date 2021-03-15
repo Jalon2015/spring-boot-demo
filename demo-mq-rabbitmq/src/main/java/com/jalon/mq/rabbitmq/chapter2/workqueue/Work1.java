@@ -15,8 +15,9 @@ import java.util.concurrent.TimeoutException;
  * @author: jalon2015
  * @date: 2021/3/12 18:26
  */
-public class Work {
+public class Work1 {
     private final static String QUEUE_NAME = "work_queue";
+    private final static String QUEUE_NAME_DURABLE = "work_queue_durable";
 
     public static void main(String[] args) {
         ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -25,7 +26,9 @@ public class Work {
             Connection connection = connectionFactory.newConnection();
             Channel channel = connection.createChannel();
 
-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+            // 队列持久化：如果RabbitMQ服务挂了，保证队列还存在
+            boolean durable = true;
+            channel.queueDeclare(QUEUE_NAME_DURABLE, durable, false, false, null);
             System.out.println("waiting for messages, to exit press CTRL+C");
             DeliverCallback callback = (s, delivery)->{
                 String s1 = new String(delivery.getBody(), "utf-8");
@@ -38,7 +41,7 @@ public class Work {
                     System.out.println("done");
                 }
             };
-            channel.basicConsume(QUEUE_NAME, true, callback, consumeTag->{});
+            channel.basicConsume(QUEUE_NAME_DURABLE, true, callback, consumeTag->{});
         } catch (IOException e) {
             e.printStackTrace();
         } catch (TimeoutException e) {

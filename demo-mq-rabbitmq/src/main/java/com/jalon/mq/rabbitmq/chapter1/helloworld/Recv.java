@@ -24,11 +24,9 @@ public class Recv {
 
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
         System.out.println("waiting for  messages, To exit press CTRL+C");
-        DeliverCallback callback = new DeliverCallback() {
-            public void handle(String s, Delivery delivery) throws IOException {
-                String message = new String(delivery.getBody(), "utf-8");
-                System.out.println("received:" + message);
-            }
+        DeliverCallback callback = (s, delivery) -> {
+            String message = new String(delivery.getBody(), "utf-8");
+            System.out.println("received:" + message);
         };
         channel.basicConsume(QUEUE_NAME, true, callback, new CancelCallback() {
             public void handle(String consumerTag) throws IOException {

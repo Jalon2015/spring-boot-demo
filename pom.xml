@@ -15,6 +15,7 @@
         <module>demo-orm-jpa</module>
         <module>demo-mq-rocketmq</module>
         <module>demo-mq-rabbitmq</module>
+        <module>asdf</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo-v2</name>
@@ -22,6 +23,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencyManagement>
         <dependencies>
