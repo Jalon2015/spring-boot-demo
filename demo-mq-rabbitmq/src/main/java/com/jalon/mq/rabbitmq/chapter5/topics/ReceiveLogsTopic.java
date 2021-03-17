@@ -1,4 +1,4 @@
-package com.jalon.mq.rabbitmq.chapter4.routing;
+package com.jalon.mq.rabbitmq.chapter5.topics;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -12,9 +12,9 @@ import java.util.concurrent.TimeoutException;
  * @author: jalon2015
  * @date: 2021/3/15 16:30
  */
-public class ReceiveLogsDirect {
+public class ReceiveLogsTopic {
     // 定义交换机名称
-    private static final String EXCHANGE_NAME = "direct_logs";
+    private static final String EXCHANGE_NAME = "topic_logs";
 
     public static void main(String[] args) {
         ConnectionFactory factory = new ConnectionFactory();
@@ -23,13 +23,12 @@ public class ReceiveLogsDirect {
             Connection connection = factory.newConnection();
 
             Channel channel = connection.createChannel();
-            // 声明交换机类型：direct，即直接模式
-            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
+            // 声明交换机类型：topic
+            channel.exchangeDeclare(EXCHANGE_NAME, "topic");
             // 生成临时队列
             String queue = channel.queueDeclare().getQueue();
-            // 将队列绑定到交换机上，添加绑定信息 info, error
-            channel.queueBind(queue, EXCHANGE_NAME, "info");
-            channel.queueBind(queue, EXCHANGE_NAME, "error");
+            // 将队列绑定到交换机上，binding key为system.A.*，表示这个队列接收系统A的所有消息
+            channel.queueBind(queue, EXCHANGE_NAME, "system.A.*");
 
             System.out.println("waiting for messages, to exit press CTRL+C");
 

@@ -8,22 +8,18 @@
 
 ## 知识点
 
-### 交换机
+### direct交换机
 
-生产者不是直接把消息发布到队列，而是通过**交换机**实现，下图中的P代表生产者，X代表交换机，红色的是队列
+前面第三节讲的是fanout交换机，fanout的特点是广播消息到所有已知队列；
 
-![image-20210315170209049](https://i.loli.net/2021/03/15/zwhgMHG6Svf4xjD.png)
-
-交换机有4种：direct, topic, headers, fanout，这里只演示direct交换机；
-
-**direct交换机**：比前面的fanout更加灵活，可以通过绑定消息类型来过滤消息
+这里的direct交换机，比fanout更加灵活，因为direct可以通过绑定路由信息来指定发送和接收的消息类型
 
 ```java
 // 声明交换机类型：direct，即direct模式
 channel.exchangeDeclare(EXCHANGE_NAME, "direct");
 ```
 
-**发布指定类型的消息**：生产者在发布消息时，可以指定消息的类型，代码如下
+**路由信息【生产者】**：生产者在发布消息时，可以指定消息的特定信息，这个信息就称作**路由信息(routing key)**，代码如下
 
 ```java
 // 定义一个error消息
@@ -33,7 +29,7 @@ channel.basicPublish(EXCHANGE_NAME, "error", null, messageError.getBytes());
 System.out.println("send: " + messageError);
 ```
 
-**消费指定类型的消息**：消费者在将队列绑定到交换机时，可以指定消息的类型，代码如下
+**绑定信息【消费者】**：消费者在将队列绑定到交换机时，可以指定消息的特定信息，这个信息就称作**绑定信息(binding key)**，代码如下
 
 ```java
 // 将队列绑定到交换机上，第三个参数就是消息类型，这里为空，表示队列接收交换机传来的所有消息
@@ -44,7 +40,13 @@ channel.queueBind(queue, EXCHANGE_NAME, "error");
 
 ![image-20210315181109654](https://i.loli.net/2021/03/15/SqRMG12v4rutNci.png)
 
->  PS：如果有多个队列和交换机的绑定关系，那么其中的消息类型合并到一起，比如先后绑定了info和error类型,那么该队列会同时接收info和error类型的消息
+>  PS：如果消费者想接收多个类型的消息，可以绑定多个消息类型，此时绑定的多个消息类型会合并到一起，比如先后绑定了info和error类型,那么该队列会同时接收info和error类型的消息
+>
+>  ```java
+>  // 先后绑定info,error信息
+>  channel.queueBind(queue, EXCHANGE_NAME, "info");
+>  channel.queueBind(queue, EXCHANGE_NAME, "error");
+>  ```
 
 ## 代码
 
@@ -175,4 +177,6 @@ public class ReceiveLogsDirect2 {
 - 先运行消费者代码`ReceiveLogsDirect.java`和`ReceiveLogsDirect2.java`，然后再运行生产者代码`EmitLogDirect.java`
 - 可以看到控制台输出如下所示，**`ReceiveLogsDirect.java`同时接收info,error消息，`ReceiveLogsDirect2.java`只接收了error消息**
 
-![h515z-u6n8m](https://i.loli.net/2021/03/15/Nt7xmSz48dnlQ6C.gif)
+![image-20210317142209765](https://i.loli.net/2021/03/17/jHlObfwUGJdB95h.png)
+
+![image-20210317142237238](https://i.loli.net/2021/03/17/UZcnRtofwvi4T65.png)

@@ -5,7 +5,7 @@
 比如web服务器，某个请求的后台操作可能要耗时十几分钟，此时如果没有工作队列，那么请求就会响应超时
 但是有了工作队列，就可以先把请求要处理的任务放到工作队列中，然后快速响应请求
 
-## 核心代码
+## 基础代码
 > PS：这里我们用`Thread.sleep()`来模拟耗时操作，同时消息内容中的"."的长度就代表了耗时的秒数
 ### 生产者
 `NewTask.java`
@@ -83,7 +83,7 @@ public class Work {
     }
 }
 ```
-## 功能
+## 知识点
 
 ### 轮询
 
@@ -97,13 +97,15 @@ public class Work {
 
 #### 示例：
 
-将消费者程序Work再复制两份，总共三个消费者`Work1.java`,`Work2.java`,`Work3.java`
+将上面的消费者程序Work再复制两份，总共三个消费者`Work1.java`,`Work2.java`,`Work3.java`
 
 #### 步骤：
 
-2. 然后依次启动这三个消费者
-3. 最后启动生产者程序`NewTask.java`
-4. 从控制台可以看到，平均每个消费者拿到三条消息
+1. 依次启动这三个消费者
+
+2. 最后启动生产者程序`NewTask.java`
+
+3. 从控制台可以看到，平均每个消费者拿到三条消息
 
 ![3dkgo-zbkn7](https://i.loli.net/2021/03/15/uvFjJAcS1iyVx7w.gif)
 
@@ -144,17 +146,17 @@ public class Work {
 
 ```java
 
-                    // 2. === begin ===
-                    // 注释掉手动确认的代码，假设忘记了手动确认
-//                    channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
-                    System.out.println("forget ack");
-                    // 2. === end ===
+// 2. === begin ===
+// 注释掉手动确认的代码，假设忘记了手动确认
+// channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
+System.out.println("forget ack");
+// 2. === end ===
                
-            // 1. === begin ===
-            // 这里将之前的自动确认改为手动确认
-            boolean autoAck = false;
-            channel.basicConsume(QUEUE_NAME, autoAck, callback, consumeTag->{});
-            // 1. === end ===
+// 1. === begin ===
+// 这里将之前的自动确认改为手动确认
+boolean autoAck = false;
+channel.basicConsume(QUEUE_NAME, autoAck, callback, consumeTag->{});
+// 1. === end ===
 
 ```
 
@@ -166,7 +168,7 @@ public class Work {
 
   ![l72uu-46ra9](https://i.loli.net/2021/03/15/zqOjupUrYvHewl5.gif)
 
-> 结论：可以看到，每个消费者都是接收均等的三条消息，但是Work3的三条消息都没有确认，此时这三条消息就会一直阻塞，生产者那边也会一直在等待消息确认
+> 结论：可以看到，每个消费者都是接收均等的三条消息，但是Work3的三条消息都没有确认，此时这三条消息就会一直阻塞
 
 #### 示例2：
 
@@ -185,14 +187,14 @@ public class Work {
   
 
 
-> 结论：手动确认时，如果中断消费者，那么该消费者已接受但尚未确认的消息，会分配给其他消费者
+> 结论：手动确认时，如果中断消费者，那么该消费者已接受但尚未确认的消息，会分配给其他消费者(伪随机，不是完全随机)
 
 ### 消息持久化
 
 上面的手动确认，只是保证了消费者如果挂掉，消息不会丢失
 但是如果是RabbitMQ服务挂了呢？
 
-可以通过设置参数来保证队列和消息**基本**不会丢失（不能完全保证不丢失,要完全保证不丢失，可以参考[publisher confirms](https://www.rabbitmq.com/confirms.html)）
+可以通过设置参数来保证队列和消息基本不会丢失（不能完全保证不丢失,要完全保证不丢失，可以参考[publisher confirms](https://www.rabbitmq.com/confirms.html)）
 
 ```java
 // 1. 第二个参数设置为true，生产者和消费者都要改
@@ -236,7 +238,7 @@ channel.basicConsume(QUEUE_NAME_DURABLE, true, callback, consumeTag->{});
 
 ### 公平分配
 
-前面的例子，我们看到，就算消费者忘记手动确认，RabbitMQ还是将消息均匀的分配给了每个消费者
+前面的例子，我们看到，就算消费者忘记手动确认，RabbitMQ还是将消息均匀的分配给了每个消费者（即忘记确认的消费者后续还会收到消息）
 其实这是不合理的，因为这样就导致，那些忘记确认的消费者一直占着消息不去处理，造成消息阻塞，RabbitMQ占用内存也会越来越大
 
 > 定义：当消费者确认了一个消息后，RabbitMQ才会给它分配下一个消息，从而充分利用消费者的工作线程

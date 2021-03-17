@@ -27,7 +27,7 @@ public class ReceiveLogsDirect2 {
             channel.exchangeDeclare(EXCHANGE_NAME, "direct");
             // 生成临时队列
             String queue = channel.queueDeclare().getQueue();
-            // 将队列绑定到交换机上，添加路由名称 info, error
+            // 将队列绑定到交换机上，添加绑定信息 error
             channel.queueBind(queue, EXCHANGE_NAME, "error");
 
             System.out.println("waiting for messages, to exit press CTRL+C");

@@ -28,9 +28,7 @@ public class Recv {
             String message = new String(delivery.getBody(), "utf-8");
             System.out.println("received:" + message);
         };
-        channel.basicConsume(QUEUE_NAME, true, callback, new CancelCallback() {
-            public void handle(String consumerTag) throws IOException {
-            }
+        channel.basicConsume(QUEUE_NAME, true, callback, consumerTag -> {
         });
     }
 
