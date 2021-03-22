@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jalon</groupId>
-    <artifactId>spring-boot-demo-v2</artifactId>
+    <artifactId>spring-boot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>demo-upload</module>
@@ -18,7 +18,7 @@
         <module>demo-session</module>
     </modules>
     <packaging>pom</packaging>
-    <name>spring-boot-demo-v2</name>
+    <name>spring-boot-demo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
