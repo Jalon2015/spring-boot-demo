@@ -15,7 +15,7 @@
         <module>demo-orm-jpa</module>
         <module>demo-mq-rocketmq</module>
         <module>demo-mq-rabbitmq</module>
-        <module>asdf</module>
+        <module>demo-session</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo-v2</name>
