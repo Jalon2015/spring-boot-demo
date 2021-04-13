@@ -16,6 +16,7 @@
         <module>demo-mq-rocketmq</module>
         <module>demo-mq-rabbitmq</module>
         <module>demo-session</module>
+        <module>demo-rbac-security-simple</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>
