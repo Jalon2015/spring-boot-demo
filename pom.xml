@@ -13,10 +13,11 @@
         <module>demo-task</module>
         <module>demo-rbac-security</module>
         <module>demo-orm-jpa</module>
-        <module>demo-mq-rocketmq</module>
         <module>demo-mq-rabbitmq</module>
         <module>demo-session</module>
         <module>demo-rbac-security-simple</module>
+        <module>helloworld</module>
+        <module>properties</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>
@@ -24,31 +25,36 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring.boot.version>2.4.3</spring.boot.version>
+        <mysql.connect.java.version>8.0.21</mysql.connect.java.version>
+        <hutool.version>5.6.3</hutool.version>
+        <guava.version>30.1.1-jre</guava.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.4.3</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>2.4.3</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 
 </project>

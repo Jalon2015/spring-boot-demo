@@ -14,11 +14,8 @@ import org.springframework.context.annotation.Bean;
  * @date: 2021/3/18 11:43
  */
 @SpringBootApplication
-
 public class SpringRabbitmqApplication {
     public static void main(String[] args) {
-
-        Integer[] a = new Integer[]{1,2,3};
         SpringApplication.run(SpringRabbitmqApplication.class, args);
     }
 }

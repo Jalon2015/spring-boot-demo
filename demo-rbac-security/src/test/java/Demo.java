@@ -14,6 +14,6 @@ public class Demo {
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         String encode = bCryptPasswordEncoder.encode("123456");
         System.out.println(encode);
-        System.out.println(UrlUtils.isAbsoluteUrl("\\Ajavalover.cc"));
+        System.out.println(UrlUtils.isAbsoluteUrl("\\A"));
     }
 }
