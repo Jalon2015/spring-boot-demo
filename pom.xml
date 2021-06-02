@@ -11,13 +11,13 @@
         <module>demo-cache-redis</module>
         <module>demo-admin</module>
         <module>demo-task</module>
-        <module>demo-rbac-security</module>
         <module>demo-orm-jpa</module>
         <module>demo-mq-rabbitmq</module>
         <module>demo-session</module>
-        <module>demo-rbac-security-simple</module>
+        <module>demo-spring-security</module>
         <module>helloworld</module>
         <module>properties</module>
+        <module>demo-spring-security-oauth2-jwt</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>
@@ -29,6 +29,7 @@
         <mysql.connect.java.version>8.0.21</mysql.connect.java.version>
         <hutool.version>5.6.3</hutool.version>
         <guava.version>30.1.1-jre</guava.version>
+        <lombok.version>1.18.16</lombok.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -53,6 +54,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

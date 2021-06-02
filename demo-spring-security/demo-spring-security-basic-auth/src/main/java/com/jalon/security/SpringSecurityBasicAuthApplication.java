@@ -1,21 +1,19 @@
-package com.jalon.properties;
+package com.jalon.security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- *  读取配置文件的内容
+ *  SpringSecurity - 基于basic auth
  * </p>
  *
  * @author: JavaLover
- * @date: 2021/4/16 19:55
+ * @date: 2021/6/2 14:41
  */
 @SpringBootApplication
-public class PropertiesApplication {
-
+public class SpringSecurityBasicAuthApplication {
     public static void main(String[] args) {
-        SpringApplication.run(PropertiesApplication.class, args);
-
+        SpringApplication.run(SpringSecurityBasicAuthApplication.class, args);
     }
 }
