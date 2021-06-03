@@ -17,7 +17,6 @@
         <module>demo-spring-security</module>
         <module>helloworld</module>
         <module>properties</module>
-        <module>demo-spring-security-oauth2-jwt</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>

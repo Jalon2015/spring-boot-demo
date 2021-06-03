@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Access Denied</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <span th:text="${user}"></span>没有权限访问页面
     你的权限是<span th:text="${role}"></span>
-    <a href="loginout">退出</a>
+    <a href="logout">退出</a>
 </body>
 </html>

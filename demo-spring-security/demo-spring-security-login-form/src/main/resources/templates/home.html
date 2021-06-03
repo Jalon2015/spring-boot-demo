@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Spring Security Home</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     欢迎<span th:text="${user}"></span>
     你的权限是<span th:text="${role}"></span>
     <a href="admin">admin页面</a>
-    <a href="loginout">退出</a>
+    <a href="logout">退出</a>
 </body>
 </html>
