@@ -17,6 +17,8 @@
         <module>demo-spring-security</module>
         <module>helloworld</module>
         <module>properties</module>
+        <module>demo-swagger3</module>
+        <module>demo-email</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>
@@ -32,6 +34,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 控制台输出中文不乱码 -->
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <dependencyManagement>

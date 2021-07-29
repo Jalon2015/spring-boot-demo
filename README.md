@@ -14,11 +14,11 @@
 - [ ]  demo-orm-mybatis-plus(操作关系型数据库 - 集成mybatis-plus，Mapper操作，ActiveRecord操作)
 - [ ]  demo-cache-redis(使用redis进行缓存)
 - [ ]  demo-cache-ehcache(使用Ehcache进行缓存)
-- [ ]  demo-email(集成邮件服务)
+- [x]  demo-email(集成邮件服务)
 - [ ]  demo-task(定时任务-Task实现)
 - [ ]  demo-task-quartz（定时任务 - Quartz实现）
 - [ ]  demo-task-xxl-job(定时任务 - XXL-JOB实现分布式调度)
-- [ ]  demo-swagger（集成 Swagger 对 API 接口进行测试管理）
+- [x]  demo-swagger（集成 Swagger 对 API 接口进行测试管理）
 - [ ]  demo-swagger-beauty（集成自定义且更加美观的 Swagger 对 API 接口进行测试管理）
 - [ ]  demo-rbac-security(实现基于RBAC的权限模型-Spring Security)
 - [ ]  demo-rbac-shiro(实现基于RBAC的权限模型-Shiro)
