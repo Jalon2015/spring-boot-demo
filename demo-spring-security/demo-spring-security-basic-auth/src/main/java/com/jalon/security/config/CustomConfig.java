@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.annotation.web.configurers.CorsConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -26,6 +28,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 @EnableWebSecurity
 public class CustomConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer{
+
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -48,7 +51,8 @@ public class CustomConfig extends WebSecurityConfigurerAdapter implements WebMvc
                 .anyRequest().authenticated()
                 .and()
                 // 这里的httpBasic就是说明这里的认证不是通过登录表单，而是基于http形式的请求来认证
-                .httpBasic();
+                .httpBasic()
+        ;
     }
 
     // 这里的密码加密器需注入，不然会提示缺少默认的密码加密器

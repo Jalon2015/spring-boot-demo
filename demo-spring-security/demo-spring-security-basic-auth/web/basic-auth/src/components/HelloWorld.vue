@@ -15,10 +15,10 @@ export default {
     mounted() {
         this.axiosInstance = axios.create({
             baseURL: 'http://localhost:8090',
-            auth: {
-                username: 'javalover',
-                password: '123456'
-            }
+            // auth: {
+            //     username: 'javalover',
+            //     password: '123456'
+            // }
         })
     },
     methods:{

@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>demo-upload</module>
-        <module>demo-cache-redis</module>
+<!--        <module>demo-cache-redis</module>-->
         <module>demo-admin</module>
         <module>demo-task</module>
         <module>demo-orm-jpa</module>

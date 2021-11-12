@@ -44,9 +44,13 @@ public class UserController {
     }
 
     @Operation(summary = "用户接口 - 添加用户")
+    @ApiImplicitParams(value = {
+            @ApiImplicitParam(name = "username1", value = "用户名1", paramType = "body"),
+            @ApiImplicitParam(name = "password1", value = "密码1", paramType = "body")
+    })
     @PostMapping("/user/add")
     // 这里的user会被Swagger自动识别
-    public User addUser(@RequestBody User user){
+    public User addUser(@ApiIgnore @RequestBody User user){
         System.out.println("添加用户");
         return user;
     }
