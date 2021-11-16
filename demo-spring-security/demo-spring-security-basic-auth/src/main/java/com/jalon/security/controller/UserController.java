@@ -1,6 +1,5 @@
 package com.jalon.security.controller;
 
-import com.jalon.security.entity.User;
 import org.springframework.web.bind.annotation.*;
 
 /**

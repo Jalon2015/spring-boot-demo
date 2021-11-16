@@ -10,11 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
         <modules>
             <!-- 基于JPA的安全机制 -->
-            <module>demo-spring-security-jpa</module>
+<!--            <module>demo-spring-security-jpa</module>-->
             <!-- 基于登录表单的认证机制 -->
             <module>demo-spring-security-login-form</module>
             <!-- 基于http请求的认证机制 -->
             <module>demo-spring-security-basic-auth</module>
+            <!-- 获取用户基本信息 -->
+            <module>demo-spring-security-userinfo</module>
         </modules>
     <packaging>pom</packaging>
     <artifactId>demo-spring-security</artifactId>
