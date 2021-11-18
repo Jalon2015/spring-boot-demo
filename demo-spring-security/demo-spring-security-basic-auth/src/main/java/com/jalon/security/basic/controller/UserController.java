@@ -1,4 +1,4 @@
-package com.jalon.security.controller;
+package com.jalon.security.basic.controller;
 
 import org.springframework.web.bind.annotation.*;
 

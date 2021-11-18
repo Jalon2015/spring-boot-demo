@@ -1,4 +1,4 @@
-package com.jalon.security.entity;
+package com.jalon.security.basic.entity;
 
 import lombok.Data;
 

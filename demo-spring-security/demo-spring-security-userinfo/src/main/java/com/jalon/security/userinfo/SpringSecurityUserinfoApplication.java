@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- *  SpringSecurity - 基于basic auth
+ *  SpringSecurity -
  * </p>
  *
  * @author: JavaLover
