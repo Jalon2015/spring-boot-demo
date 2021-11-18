@@ -1,19 +1,19 @@
-package com.jalon.security.userinfo;
+package com.jalon.security.session;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- *  SpringSecurity - 基于basic auth
+ *  SpringSecurity -
  * </p>
  *
  * @author: JavaLover
  * @date: 2021/6/2 14:41
  */
 @SpringBootApplication
-public class SpringSecurityUserinfoAuthApplication {
+public class SpringSecuritySessionApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringSecurityUserinfoAuthApplication.class, args);
+        SpringApplication.run(SpringSecuritySessionApplication.class, args);
     }
 }

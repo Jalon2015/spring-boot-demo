@@ -1,4 +1,4 @@
-package com.jalon.security.config;
+package com.jalon.security.logout.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
 /**
  * <p>
@@ -23,6 +24,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 @Slf4j
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+    @Bean
+    public LogoutSuccessHandler logoutSuccessHandler(){
+        return new CustomLogoutSuccessHandler();
+    }
 
     // 认证相关操作
     @Autowired
@@ -59,7 +65,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .failureUrl("/login?error=true")
             .and()
             // 登出 所有用户都可以访问
-            .logout().permitAll()
+            .logout()
+                .permitAll()
+                .logoutSuccessUrl("/login")
+                .logoutUrl("/logout")
+                .invalidateHttpSession(false)
+                .deleteCookies("JSESSIONID")
+                .logoutSuccessHandler(logoutSuccessHandler())
             .and()
             // 权限不足时跳转的页面，即访问一个页面时没有对应的权限，会跳转到这个页面
             .exceptionHandling().accessDeniedPage("/accessDenied");

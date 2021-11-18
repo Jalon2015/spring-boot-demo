@@ -1,4 +1,4 @@
-package com.jalon.security.controller;
+package com.jalon.security.form.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;

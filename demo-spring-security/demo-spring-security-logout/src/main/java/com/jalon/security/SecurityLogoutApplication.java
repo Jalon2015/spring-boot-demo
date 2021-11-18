@@ -1,20 +1,19 @@
 package com.jalon.security;
 
-import com.jalon.security.userinfo.SpringSecurityUserinfoApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- *  SpringSecurity - 基于basic auth
+ *
  * </p>
  *
  * @author: JavaLover
- * @date: 2021/6/2 14:41
+ * @date: 2021/4/12 18:28
  */
 @SpringBootApplication
-public class SpringSecurityBasicAuthApplication {
+public class SecurityLogoutApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringSecurityUserinfoApplication.class, args);
+        SpringApplication.run(SecurityLogoutApplication.class, args);
     }
 }

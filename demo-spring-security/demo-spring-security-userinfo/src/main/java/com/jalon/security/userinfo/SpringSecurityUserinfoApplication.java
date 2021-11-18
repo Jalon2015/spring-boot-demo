@@ -1,6 +1,5 @@
-package com.jalon.security;
+package com.jalon.security.userinfo;
 
-import com.jalon.security.userinfo.SpringSecurityUserinfoApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date: 2021/6/2 14:41
  */
 @SpringBootApplication
-public class SpringSecurityBasicAuthApplication {
+public class SpringSecurityUserinfoApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringSecurityUserinfoApplication.class, args);
     }

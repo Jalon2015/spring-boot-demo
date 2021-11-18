@@ -13,10 +13,14 @@
 <!--            <module>demo-spring-security-jpa</module>-->
             <!-- 基于登录表单的认证机制 -->
             <module>demo-spring-security-login-form</module>
+            <!-- 基于登录表单的退出机制 -->
+            <module>demo-spring-security-logout</module>
             <!-- 基于http请求的认证机制 -->
             <module>demo-spring-security-basic-auth</module>
             <!-- 获取用户基本信息 -->
             <module>demo-spring-security-userinfo</module>
+            <!-- Session管理 -->
+            <module>demo-spring-security-session</module>
         </modules>
     <packaging>pom</packaging>
     <artifactId>demo-spring-security</artifactId>
