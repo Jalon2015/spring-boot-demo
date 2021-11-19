@@ -22,7 +22,6 @@ import java.util.Collection;
 @Slf4j
 public class SecurityController {
 
-
     @RequestMapping("/login")
     public String login(){
         log.info("=== login ===");
