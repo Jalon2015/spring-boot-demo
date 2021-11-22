@@ -13,6 +13,8 @@
 <!--            <module>demo-spring-security-jpa</module>-->
             <!-- 基于登录表单的认证机制 -->
             <module>demo-spring-security-login-form</module>
+            <!-- 记住我 -->
+            <module>demo-spring-security-remember-me</module>
             <!-- 登录之后的重定向：根据不同的角色跳转不同的界面 -->
             <module>demo-spring-security-login-redirect</module>
             <!-- 基于登录表单的退出机制 -->
