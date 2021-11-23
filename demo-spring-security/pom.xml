@@ -23,6 +23,8 @@
             <module>demo-spring-security-basic-auth</module>
             <!-- 获取用户基本信息 -->
             <module>demo-spring-security-userinfo</module>
+            <!-- 手动登录 -->
+            <module>demo-spring-security-manually-login</module>
             <!-- Session管理 -->
             <module>demo-spring-security-session</module>
         </modules>
