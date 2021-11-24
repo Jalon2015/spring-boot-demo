@@ -17,6 +17,8 @@
             <module>demo-spring-security-remember-me</module>
             <!-- 登录之后的重定向：根据不同的角色跳转不同的界面 -->
             <module>demo-spring-security-login-redirect</module>
+            <!-- 认证失败的异常处理 -->
+            <module>demo-spring-security-auth-failure-handler</module>
             <!-- 基于登录表单的退出机制 -->
             <module>demo-spring-security-logout</module>
             <!-- 基于http请求的认证机制 -->

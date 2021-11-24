@@ -1,27 +1,14 @@
-package com.jalon.security.manually.controller;
+package com.jalon.security.authfail.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.context.HttpSessionSecurityContextRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED_VALUE;
-import static org.springframework.http.MediaType.MULTIPART_FORM_DATA_VALUE;
-import static org.springframework.security.web.context.HttpSessionSecurityContextRepository.SPRING_SECURITY_CONTEXT_KEY;
 
 /**
  * <p>
@@ -39,22 +26,6 @@ public class SecurityController {
     public String login(){
         log.info("=== login ===");
         return "login";
-    }
-
-    @Autowired
-    AuthenticationManager authManager;
-
-    @PostMapping(path="/manually-login", consumes={APPLICATION_FORM_URLENCODED_VALUE})
-    public String manuallyLogin(HttpServletRequest request, String username, String password, String city){
-        System.out.println("=== city:" + city);
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
-        Authentication authentication = authManager.authenticate(authenticationToken);
-        SecurityContext context = SecurityContextHolder.getContext();
-        context.setAuthentication(authentication);
-        HttpSession session = request.getSession(true);
-        session.setAttribute(SPRING_SECURITY_CONTEXT_KEY, context);
-        System.out.println("是否认证通过："+context.getAuthentication());
-        return "redirect:/home" ;
     }
 
     @RequestMapping("/home")

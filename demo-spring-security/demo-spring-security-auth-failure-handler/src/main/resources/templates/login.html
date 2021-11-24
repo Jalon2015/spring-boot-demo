@@ -12,10 +12,9 @@
     <div th:if="${param.logout}">
         You have been logged out
     </div>
-    <form action="/manually-login" method="post">
+    <form action="/login" method="post">
         <input name="username" placeholder="用户名">
         <input name="password" placeholder="密码">
-        <input name="city" placeholder="城市">
         <button type="submit">登录</button>
     </form>
 </body>
