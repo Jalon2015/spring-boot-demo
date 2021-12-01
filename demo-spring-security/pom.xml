@@ -27,6 +27,8 @@
             <module>demo-spring-security-userinfo</module>
             <!-- 手动登录 -->
             <module>demo-spring-security-manually-login</module>
+            <!-- 阻止暴力破解认证 -->
+            <module>demo-spring-security-block-brute-force-auth</module>
             <!-- Session管理 -->
             <module>demo-spring-security-session</module>
         </modules>
