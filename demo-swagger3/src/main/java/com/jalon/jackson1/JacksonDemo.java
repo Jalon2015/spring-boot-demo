@@ -1,4 +1,4 @@
-package com.jalon;
+package com.jalon.jackson1;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -20,7 +20,7 @@ import java.util.Map;
  */
 public class JacksonDemo {
     public static void main(String[] args) throws JsonProcessingException {
-        User user = new User("admin", "123", new String[]{});
+        User user = new User("admin", "123");
         ObjectMapper objectMapper = new ObjectMapper();
         String str = objectMapper.writeValueAsString(user);
         System.out.println(str);
