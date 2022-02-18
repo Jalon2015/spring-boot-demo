@@ -49,5 +49,12 @@ public class Demo8 {
         JsonNode jsonNode7 = objectMapper.readTree(s7);
         System.out.println(jsonNode6.equals(jsonNode7));
 
+        String s8 = "{\"name\":\"jalon\", \"girlFriend\": [{\"name\":\"xiaomei\"}]}";
+        String s9 = "{\"name\":\"jalon\", \"girlFriend\": [{\"name\":\"lili\"}]}";
+        JsonNode jsonNode8 = objectMapper.readTree(s8);
+        JsonNode jsonNode9 = objectMapper.readTree(s9);
+        System.out.println(jsonNode8.equals(jsonNode9));
+
+
     }
 }
