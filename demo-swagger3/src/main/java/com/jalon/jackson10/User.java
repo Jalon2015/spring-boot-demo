@@ -28,4 +28,9 @@ public class User {
     public Date getBirth(){
         return birth;
     }
+
+    @JsonGetter(value = "username")
+    public String getMyUsername(){
+        return "actual name";
+    }
 }

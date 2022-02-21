@@ -22,5 +22,6 @@ public class Demo10 {
         User user = new User("jalon", new Date());
         String s = objectMapper.writeValueAsString(user);
         System.out.println(s);
+        System.out.println(user.getUsername());
     }
 }
