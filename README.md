@@ -5,7 +5,7 @@
 - [ ]  demo-admin-client(对SpringBoot可视化管控-客户端)
 - [ ]  demo-admin-server(对SpringBoot可视化管控-服务端)
 - [ ]  demo-logback(集成logback日志)
-- [ ]  demo-log-aop(使用AOP拦截请求日志信息)
+- [x]  demo-log-aop(使用AOP拦截请求日志信息)
 - [ ]  demo-exception-handler(统一异常处理)
 - [ ]  demo-template-thymeleaf（使用模板引擎 - thymeleaf）
 - [ ]  demo-upload（上传，集成本地上传和七牛云上传）

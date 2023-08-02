@@ -19,6 +19,7 @@
         <module>properties</module>
         <module>demo-swagger3</module>
         <module>demo-email</module>
+        <module>demo-log-aop</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>

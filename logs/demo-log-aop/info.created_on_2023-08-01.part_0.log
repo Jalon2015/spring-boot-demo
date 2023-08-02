@@ -1,0 +1,158 @@
+2023-08-01 17:27:54,489 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 15196 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 17:27:54,495 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 17:27:55,335 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 17:27:55,342 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 17:27:55,343 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 17:27:55,397 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 17:27:55,398 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 854 ms
+2023-08-01 17:27:55,623 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 17:27:55,787 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 17:27:55,795 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.766 seconds (JVM running for 2.343)
+2023-08-01 17:27:56,697 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 17:27:56,697 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 17:27:56,698 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 0 ms
+2023-08-01 17:27:56,725 [http-nio-8080-exec-1] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 18:56:01,255 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:56:04,868 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 17956 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 18:56:04,872 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 18:56:05,690 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 18:56:05,697 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:56:05,698 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 18:56:05,698 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 18:56:05,753 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 18:56:05,753 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 835 ms
+2023-08-01 18:56:05,955 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:56:06,106 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:56:06,123 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 18:56:06,130 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.699 seconds (JVM running for 2.281)
+2023-08-01 18:56:09,839 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 18:56:09,839 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 18:56:09,840 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 0 ms
+2023-08-01 18:56:09,867 [http-nio-8080-exec-1] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 18:57:26,820 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:57:30,389 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 8396 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 18:57:30,392 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 18:57:31,219 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 18:57:31,227 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:57:31,228 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 18:57:31,228 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 18:57:31,282 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 18:57:31,282 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 855 ms
+2023-08-01 18:57:31,471 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:57:31,617 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:57:31,633 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 18:57:31,640 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.691 seconds (JVM running for 2.253)
+2023-08-01 18:57:36,791 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:57:40,303 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 10456 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 18:57:40,307 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 18:57:41,111 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 18:57:41,118 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:57:41,119 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 18:57:41,119 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 18:57:41,170 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 18:57:41,170 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 823 ms
+2023-08-01 18:57:41,363 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:57:41,505 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:57:41,520 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 18:57:41,528 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.659 seconds (JVM running for 2.229)
+2023-08-01 18:57:44,989 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 18:57:44,989 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 18:57:44,990 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-08-01 18:57:57,295 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:57:59,710 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 16028 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 18:57:59,714 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 18:58:00,517 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 18:58:00,525 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:58:00,526 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 18:58:00,526 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 18:58:00,583 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 18:58:00,583 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 831 ms
+2023-08-01 18:58:00,768 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:58:00,912 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:58:00,927 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 18:58:00,934 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.645 seconds (JVM running for 2.285)
+2023-08-01 18:58:01,835 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 18:58:01,835 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 18:58:01,836 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-08-01 18:58:28,416 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:58:31,921 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 18392 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 18:58:31,924 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 18:58:32,711 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 18:58:32,718 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:58:32,719 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 18:58:32,719 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 18:58:32,770 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 18:58:32,770 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 809 ms
+2023-08-01 18:58:32,966 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 18:58:33,105 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 18:58:33,120 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 18:58:33,127 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.628 seconds (JVM running for 2.197)
+2023-08-01 18:58:35,783 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 18:58:35,784 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 18:58:35,784 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 0 ms
+2023-08-01 18:58:35,811 [http-nio-8080-exec-1] WARN  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 19:01:57,819 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:02:01,431 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 14928 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 19:02:01,434 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 19:02:02,276 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 19:02:02,283 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:02:02,284 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 19:02:02,284 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 19:02:02,336 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 19:02:02,336 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 868 ms
+2023-08-01 19:02:02,530 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:02:02,677 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:02:02,694 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 19:02:02,702 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.672 seconds (JVM running for 2.261)
+2023-08-01 19:02:04,456 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 19:02:04,457 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 19:02:04,458 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-08-01 19:02:04,488 [http-nio-8080-exec-1] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 19:06:15,963 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:06:18,492 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 1880 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 19:06:18,495 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 19:06:19,274 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 19:06:19,281 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:06:19,282 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 19:06:19,282 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 19:06:19,334 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 19:06:19,335 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 806 ms
+2023-08-01 19:06:19,520 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:06:19,662 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:06:19,678 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 19:06:19,685 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.623 seconds (JVM running for 2.276)
+2023-08-01 19:06:34,597 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 19:06:34,597 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 19:06:34,598 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-08-01 19:06:34,631 [http-nio-8080-exec-1] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 19:07:21,140 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:07:23,770 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 16928 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 19:07:23,773 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 19:07:24,564 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 19:07:24,572 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:07:24,573 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 19:07:24,573 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 19:07:24,626 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 19:07:24,626 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 817 ms
+2023-08-01 19:07:24,830 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:07:24,985 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:07:25,000 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 19:07:25,009 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.667 seconds (JVM running for 2.275)
+2023-08-01 19:07:26,302 [http-nio-8080-exec-1] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 19:07:26,302 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
+2023-08-01 19:07:26,303 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 1 ms
+2023-08-01 19:07:26,330 [http-nio-8080-exec-1] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 19:07:30,532 [http-nio-8080-exec-2] INFO  [com.jalon.controller.LogController] LogController.java:17 - test
+2023-08-01 19:14:16,080 [SpringContextShutdownHook] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:14:18,573 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:55 - Starting AopApplication using Java 1.8.0_322 on 11J with PID 17608 (D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon\demo-log-aop\target\classes started by Administrator in D:\CompanyProject\SpringBootProject\spring-boot-demo-jalon)
+2023-08-01 19:14:18,576 [main] INFO  [com.jalon.AopApplication] SpringApplication.java:660 - No active profile set, falling back to default profiles: default
+2023-08-01 19:14:19,343 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:108 - Tomcat initialized with port(s): 8080 (http)
+2023-08-01 19:14:19,350 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:14:19,351 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2023-08-01 19:14:19,351 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-08-01 19:14:19,402 [main] INFO  [o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2023-08-01 19:14:19,402 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] ServletWebServerApplicationContext.java:289 - Root WebApplicationContext: initialization completed in 791 ms
+2023-08-01 19:14:19,592 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-01 19:14:19,725 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 19:14:19,740 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:220 - Tomcat started on port(s): 8080 (http) with context path '/demo'
+2023-08-01 19:14:19,747 [main] INFO  [com.jalon.AopApplication] StartupInfoLogger.java:61 - Started AopApplication in 1.57 seconds (JVM running for 2.18)
