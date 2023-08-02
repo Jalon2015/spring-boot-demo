@@ -15,7 +15,7 @@
         <module>demo-mq-rabbitmq</module>
         <module>demo-session</module>
         <module>demo-spring-security</module>
-        <module>helloworld</module>
+        <module>demo-helloworld</module>
         <module>properties</module>
         <module>demo-swagger3</module>
         <module>demo-email</module>
