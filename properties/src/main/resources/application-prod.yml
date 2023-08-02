@@ -1,7 +1,0 @@
-application:
-  name: prod环境 @artifactId@
-  version: prod环境 @version@
-developer:
-  name: prod环境 javalover
-  website: prod环境 http://javalover.cc
-  nickname: prod环境 汤圆学Java

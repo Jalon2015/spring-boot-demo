@@ -16,7 +16,7 @@
         <module>demo-session</module>
         <module>demo-spring-security</module>
         <module>demo-helloworld</module>
-        <module>properties</module>
+        <module>demo-properties</module>
         <module>demo-swagger3</module>
         <module>demo-email</module>
         <module>demo-log-aop</module>
