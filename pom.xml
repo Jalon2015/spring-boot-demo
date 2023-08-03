@@ -7,6 +7,9 @@
     <artifactId>spring-boot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
+        <module>demo-helloworld</module>
+        <module>demo-properties</module>
+<module>demo-exceptin-handler</module>
         <module>demo-upload</module>
 <!--        <module>demo-cache-redis</module>-->
         <module>demo-admin</module>
@@ -15,8 +18,6 @@
         <module>demo-mq-rabbitmq</module>
         <module>demo-session</module>
         <module>demo-spring-security</module>
-        <module>demo-helloworld</module>
-        <module>demo-properties</module>
         <module>demo-swagger3</module>
         <module>demo-email</module>
         <module>demo-log-aop</module>
