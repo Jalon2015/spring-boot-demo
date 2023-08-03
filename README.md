@@ -1,6 +1,6 @@
 
 - [x]  demo-helloworld(Helloworld示例）
-- [ ]  demo-properties（读取配置文件信息）
+- [x]  demo-properties（读取配置文件信息）
 - [ ]  demo-actuator（对SpringBoot的端点控制）
 - [ ]  demo-admin-client(对SpringBoot可视化管控-客户端)
 - [ ]  demo-admin-server(对SpringBoot可视化管控-服务端)
