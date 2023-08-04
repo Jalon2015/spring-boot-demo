@@ -7,7 +7,7 @@
 - [x]  demo-log-aop(使用AOP拦截请求日志信息)
 - [x]  demo-exception-handler(统一异常处理)
 - [ ]  demo-template-thymeleaf（使用模板引擎 - thymeleaf）
-- [ ]  demo-upload（上传，集成本地上传和七牛云上传）
+- [x]  demo-upload（上传，只做了本地上传）
 - [ ]  demo-orm-jpa(操作SQL关系型数据库 - JPA)
 - [ ]  demo-orm-mybatis(操作SQL关系型数据库 - mybatis)
 - [ ]  demo-orm-mybatis-mapper-page(操作SQL关系型数据库 - 集成mybatis通用Mapper，PageHelper)
