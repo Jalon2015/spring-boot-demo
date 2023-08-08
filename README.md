@@ -9,7 +9,7 @@
 - [ ]  demo-template-thymeleaf（使用模板引擎 - thymeleaf）
 - [x]  demo-upload（上传，只做了本地上传）
 - [ ]  demo-orm-jpa(操作SQL关系型数据库 - JPA)
-- [ ]  demo-orm-mybatis(操作SQL关系型数据库 - mybatis)
+- [x]  demo-orm-mybatis(操作SQL关系型数据库 - mybatis)
 - [ ]  demo-orm-mybatis-mapper-page(操作SQL关系型数据库 - 集成mybatis通用Mapper，PageHelper)
 - [ ]  demo-orm-mybatis-plus(操作关系型数据库 - 集成mybatis-plus，Mapper操作，ActiveRecord操作)
 - [ ]  demo-cache-redis(使用redis进行缓存)

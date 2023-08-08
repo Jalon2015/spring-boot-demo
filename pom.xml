@@ -21,6 +21,7 @@
         <module>demo-swagger3</module>
         <module>demo-email</module>
         <module>demo-log-aop</module>
+        <module>demo-orm-mybatis</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-demo</name>
