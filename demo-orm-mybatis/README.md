@@ -77,3 +77,7 @@
   - 建议：
 
     - 省略，会更加简洁高效
+#### 分页
+- 用pagehelper实现
+- 静态方法 PageHelper.startPage: 在执行mapper查询之前，调用PageHelper.startPage(1,10)即可；
+该方法只可以被消费一次，即后续的第一次查询可以分页，但是第二次不会执行分页
