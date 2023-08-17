@@ -1,5 +1,6 @@
 package com.jalon.controller;
 
+import com.github.pagehelper.PageHelper;
 import com.jalon.entity.User;
 import com.jalon.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ public class UserController {
 
     @GetMapping("/userList")
     public Object getUserList(@RequestParam("name") String name){
+        PageHelper.startPage(1,2);
         List<User> userList = userMapper.selectAllUser(name);
         return userList;
     }
